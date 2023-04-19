@@ -1,0 +1,37 @@
+.about-the-company{
+    width: 100%;
+
+}
+.company-text{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+.new-horizons{
+    width: 522px;
+    height: 300px;
+    margin-left:300px;
+}
+
+.horizons-text{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.info-company{
+    width: 470px;
+}
+
+.button-horizons{
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(7, 150, 155);
+    border: none;
+    color: white;
+}
+.button-comand{
+    background-color: rgb(7, 150, 155);
+    border: none;
+    color: white;
+    padding: 16px;
+}
