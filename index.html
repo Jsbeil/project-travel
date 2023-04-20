@@ -2,117 +2,262 @@
 <html>
 
 <head>
-  <script src="script/script.js"></script>
-  <script src="script/changimg/ChangingImages.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/changimg/ChangingImages.js"></script>
+    <script src="script/map/map.js "></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=e1289e3e-3308-41a8-9fad-2f29a9118649&lang=ru_RU" type="text/javascript"></script>
+    
 
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <link rel="stylesheet" type="text/css" href="style/top-header.css">
-  <link rel="stylesheet" type="text/css" href="style/header-menu.css">
-  <link rel="stylesheet" type="text/css" href="style/company-block.css">
-  <link rel="stylesheet" type="text/css" href="style/tours.css">
-  <link rel="stylesheet" type="text/css" href="component/button/button.css"">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="style/top-header.css">
+    <link rel="stylesheet" type="text/css" href="style/header-menu.css">
+    <link rel="stylesheet" type="text/css" href="style/company-block.css">
+    <link rel="stylesheet" type="text/css" href="style/tours.css">
+    <link rel="stylesheet" type="text/css" href="component/button/button.css"">
+    <link rel=" stylesheet" type="text/css" href="style/last-minute-tourse.css"">
+    <link rel=" stylesheet" type="text/css" href="style/team.css">
+    <link rel=" stylesheet" type="text/css" href="style/map.css">
+    <link rel=" stylesheet" type="text/css" href="style/send-message.css">
+    <link rel=" stylesheet" type="text/css" href="style/footer.css">
 
-  <title>travel</title>
+    <title>travel</title>
 </head>
 
 <body>
-            <div class = "container">
-                    <div class="header">
-                            <div class="top-header d-flex justify-content-around">
-                                 <li><a href="/"><img src="images/logo.png"></a></li>
-                                 <div class="time">9:00 - 18:00</div>
-                                 <div class="number">+ 38 050 050 05 05</div>
-                                 <input 
-                                 type="search" 
-                                 placeholder="Поиск" 
-                                 class="search-header">
-                            </div>
-                            <div class="header-menu">
-                                <div class="nav-menu d-flex justify-content-around">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/">О компании</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/">Наши туры</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/">Горящие путевки</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/">Контакт</a>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="video-h">
-                                <video src="media/anytour.mp4" autoplay loop muted controls class="video-header"></video>
-                            </div>  
-                    </div>
+    <div class="container">
+        <div class="header">
+            <div class="top-header d-flex justify-content-around">
+                <li><a href="/"><img src="images/logo.png"></a></li>
+                <div class="time">9:00 - 18:00</div>
+                <div class="number">+ 38 050 050 05 05</div>
+                <input type="search" placeholder="Поиск" class="search-header">
             </div>
-            
-            <div class="container">
-                <div class="about-the-company top-30">
-                    <div class="company-text">
-                        О компании
+            <div class="header-menu">
+                <div class="nav-menu d-flex justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Наши туры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Горящие путевки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Контакт</a>
+                    </li>
+                </div>
+            </div>
+            <div class="video-h">
+                <video src="media/anytour.mp4" autoplay loop muted controls class="video-header"></video>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about-the-company top-30">
+            <div class="company-text">
+                О компании
+            </div>
+            <div class="company-block d-flex justify-content-center">
+                <img src="images/img5b.jpg" id="image" style="width: 500px; height: 350px;" />
+                <div class="new-horizons">
+                    <div class="horizons-text">Откройте новые горизонты</div>
+                    <div class="horizons-menu top-30 d-flex justify-content-between">
+                        <button type="button" class="button-horizons" id="button1" onclick="chanheText(text1)"
+                            style="width: 148px;">
+                            О КОМПАНИИ
+                        </button>
+                        <button type="button" class="button-horizons" id="button2" onclick="chanheText(text2)">ПОЧЕМУ
+                            ВЫБИРАЮТ НАC
+                        </button>
+                        <button type="button" class="button-horizons" id="button3" onclick="chanheText(text3)">НАША
+                            МИССИЯ</button>
                     </div>
-                    <div class="company-block d-flex justify-content-center">
-                        <img src="images/img5b.jpg" id="image"  style="width: 500px; height: 350px;"/>
-                        <div class="new-horizons">
-                            <div class="horizons-text">Откройте новые горизонты</div>
-                            <div class="horizons-menu top-30 d-flex justify-content-between">
-                                  <button type="button"
-                                   class="button-horizons"
-                                   id="button1" 
-                                   onclick="chanheText(text1)"
-                                    style="width: 148px;">
-                                    О КОМПАНИИ
-                                </button>
-                                  <button 
-                                  type="button" 
-                                  class="button-horizons" 
-                                  id="button2" 
-                                  onclick="chanheText(text2)"
-                                   >ПОЧЕМУ ВЫБИРАЮТ НАC
-                                </button>
-                                  <button 
-                                  type="button" 
-                                  class="button-horizons" 
-                                  id="button3" 
-                                  onclick="chanheText(text3)" 
-                                  >НАША МИССИЯ</button>
-                            </div>
-                            <div class="info-company top-30" id="text">
-                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и  
-                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и 
-                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и 
-                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и 
-                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и 
-                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и 
-                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и</div>
-                        
-                            <div class="d-flex justify-content-center top-30">
-                                <button 
-                                type="button" 
-                                class="button-comand"
-                                >НАША КОМАНДА
-                            </button>
-                            </div>
-                            </div>
+                    <div class="info-company top-30" id="text">
+                        МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и
+                        МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и
+                        МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и
+                        МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и
+                        МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и
+                        МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и
+                        МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и</div>
+
+                    <div class="d-flex justify-content-center top-30">
+                        <button type="button" class="button-comand">НАША КОМАНДА
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="tours">
-                    <div class="tours-text">Наши туры</div>
-                    <div class="tours-ways top-10">
-                        <div class="tours-item">
-                            <img src="images/trv1.jpg" class="tours-img">
-                        </div>
-                        <div class="name-country">
-                            франция
-                        </div>
+        </div>
+    </div>
+    <div class="container-ml">
+        <div class="tours">
+            <div class="tours-text">Наши туры</div>
+            <div class="d-flex justify-content-between top-20">
+                <div class="tours-ways top-10">
+                    <div class="tours-item">
+                        <img src="images/trv1.jpg" class="tours-img">
+                    </div>
+                    <div class="name-country">
+                        франция
+                    </div>
+                </div>
+                <div class="tours-ways top-10">
+                    <div class="tours-item">
+                        <img src="images/trv2.jpg" class="tours-img">
+                    </div>
+                    <div class="name-country">
+                        франция
+                    </div>
+                </div>
+                <div class="tours-ways top-10">
+                    <div class="tours-item">
+                        <img src="images/trv3.jpg" class="tours-img">
+                    </div>
+                    <div class="name-country">
+                        франция
                     </div>
                 </div>
             </div>
+            <div class="d-flex justify-content-between top-30">
+                <div class="tours-ways top-10">
+                    <div class="tours-item">
+                        <img src="images/trv4.jpg" class="tours-img">
+                    </div>
+                    <div class="name-country">
+                        франция
+                    </div>
+                </div>
+                <div class="tours-ways top-10">
+                    <div class="tours-item">
+                        <img src="images/trv5.jpg" class="tours-img">
+                    </div>
+                    <div class="name-country">
+                        франция
+                    </div>
+                </div>
+                <div class="tours-ways top-10">
+                    <div class="tours-item">
+                        <img src="images/trv6.jpg" class="tours-img">
+                    </div>
+                    <div class="name-country">
+                        франция
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="last-minute-tourse">
+            <div class="tours-text text-aling-center">Горящие путевки</div>
+            <div class="place-rest d-flex justify-content-center top-30">
+                <img src="images/htour1.jpg" style="width: 509px; height: 313px;" />
+                <div class="place-rest-item">
+                    <h3 class="light-black">Бенидорм, Испания</h3>
+                    <div>Звездочки</div>
+                    <div class="gray-color">21 отзыв</div>
+                    <div class="description-tourse gray-color">
+                        Бенидорм - это шумный курорт для пляжного отдыха. Расположенный на
+                        солнечном Коста Бланке,город является одним из оригинальных
+                        испанских пляжных курортов...
+                    </div>
+                    <button class="button-comand top-20">Купить за $790</button>
+                </div>
+            </div>
+            <div class="place-rest d-flex justify-content-center top-50">
+                <img src="images/htour1.jpg" style="width: 509px; height: 313px;" />
+                <div class="place-rest-item">
+                    <h3 class="light-black">Бенидорм, Испания</h3>
+                    <div>Звездочки</div>
+                    <div class="gray-color">21 отзыв</div>
+                    <div class="description-tourse gray-color">
+                        Бенидорм - это шумный курорт для пляжного отдыха. Расположенный на
+                        солнечном Коста Бланке,город является одним из оригинальных
+                        испанских пляжных курортов...
+                    </div>
+                    <button class="button-comand top-20">Купить за $790</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contaiter">
+        <div class="team">
+            <div class="tours-text text-aling-center">Наша команда</div>
+            <div class="staff d-flex justify-content-around top-40">
+                <div class="staff-item text-aling-center">
+                    <img src="images/user1.jpg" class="staff-img aling-item-center top-20" />
+                    <h5 class="top-15 gray-color">Виолетта Маркова</h5>
+                    <h5 class="top-15 gray-color">CEO</h5>
+                    <h5 class="top-15 gray-color">+38 050 050 0505</h5>
+                </div>
+                <div class="staff-item text-aling-center">
+                    <img src="images/user2.jpg" class="staff-img aling-item-center top-20" />
+                    <h5 class="top-15 gray-color">Виолетта Маркова</h5>
+                    <h5 class="top-15 gray-color">CEO</h5>
+                    <h5 class="top-15 gray-color">+38 050 050 0505</h5>
+                </div>
+                <div class="staff-item text-aling-center">
+                    <img src="images/user3.jpg" class="staff-img aling-item-center top-20" />
+                    <h5 class="top-15 gray-color">Виолетта Маркова</h5>
+                    <h5 class="top-15 gray-color">CEO</h5>
+                    <h5 class="top-15 gray-color">+38 050 050 0505</h5>
+                </div>
+                <div class="staff-item text-aling-center">
+                    <img src="images/user4.jpg" class="staff-img aling-item-center top-20" />
+                    <h5 class="top-15 gray-color">Виолетта Маркова</h5>
+                    <h5 class="top-15 gray-color">CEO</h5>
+                    <h5 class="top-15 gray-color">+38 050 050 0505</h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="contaiter">
+        <div class="map">
+            <div class="tours-text">Контакт</div>
+            <div class="map-index" style="width: 100%; height: 397px" id="map"></div>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="send-message">
+            <div class="tours-text text-aling-center">Отправить сообщеник</div>
+            <div class="d-flex justify-content-center top-30">
+                <div class="send-message-input">
+                    <input type="text" placeholder="Ваше имя" class="send-message-text top-20"/>
+                    <input type="text" placeholder="E-mail" class="send-message-text top-10"/>
+                    <input type="text" placeholder="Телефон" class="send-message-text top-10"/>
+                    <input type="text" placeholder="Сообщение" class="send-message-text-4 top-10"/>
+                    <button class="button-comand message-button top-10">Отправить</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="d-flex justify-content-around">
+                <div class="white-color font-14 top-30">
+                    <div>КОНТАКТНАЯ ИНФОРМАЦИЯ</div>
+                    <div class="top-20">+38 050 050 0505</div>
+                    <div class="top-20">info@demolink.org</div>
+                    <div class="top-20">Минск пр.Победителей 9</div>
+                </div>
+                <div class="white-color font-14 top-30">
+                    <div>МЕНЮ САЙТА</div>
+                    <div class="top-15">О Компании</div>
+                    <div class="top-15">Наши туры</div>
+                    <div class="top-15">Горящие путевки</div>
+                    <div class="top-15">Наша команда</div>
+                </div>
+                <div class="white-color font-14 top-30">
+                    <button class="button-comand">Наши туры</button>
+                    <div class="top-20">2019 Агенство путешествий </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
