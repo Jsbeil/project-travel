@@ -2,13 +2,16 @@
 <html>
 
 <head>
-  <script src="tusk1.js"></script>
+  <script src="script/script.js"></script>
+  <script src="script/ChangingImages.js"></script>
+
   <link rel="stylesheet" type="text/css" href="index.css">
   <link rel="stylesheet" type="text/css" href="style/top-header.css">
   <link rel="stylesheet" type="text/css" href="style/header-menu.css">
   <link rel="stylesheet" type="text/css" href="style/company-block.css">
   <link rel="stylesheet" type="text/css" href="style/tours.css">
   <link rel="stylesheet" type="text/css" href="component/button/button.css"">
+
   <title>travel</title>
 </head>
 
@@ -49,24 +52,46 @@
                         О компании
                     </div>
                     <div class="company-block d-flex justify-content-center">
-                        <img src="images/img5b.jpg" style="width: 500px; height: 350px;"/>
+                        <img src="images/img5b.jpg" id="image" style="width: 500px; height: 350px;"/>
                         <div class="new-horizons">
                             <div class="horizons-text">Откройте новые горизонты</div>
                             <div class="horizons-menu top-30 d-flex justify-content-between">
-                                  <button type="button" class="button-horizons" style="width: 148px;">О КОМПАНИИ</button>
-                                  <button type="button" class="button-horizons">ПОЧЕМУ ВЫБИРАЮТ НАC</button>
-                                  <button type="button" class="button-horizons">НАША МИССИЯ</button>
+                                  <button type="button"
+                                   class="button-horizons"
+                                   id="button1" 
+                                   onclick="chanheText(text1)"
+                                    style="width: 148px;">
+                                    О КОМПАНИИ
+                                </button>
+                                  <button 
+                                  type="button" 
+                                  class="button-horizons" 
+                                  id="button2" 
+                                  onclick="chanheText(text2)"
+                                   >ПОЧЕМУ ВЫБИРАЮТ НАC
+                                </button>
+                                  <button 
+                                  type="button" 
+                                  class="button-horizons" 
+                                  id="button3" 
+                                  onclick="chanheText(text3)" 
+                                  >НАША МИССИЯ</button>
                             </div>
-                            <div class="info-company top-30">
-                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и
-                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и
-                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и
-                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и
-                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и
-                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и
-                            </div>
+                            <div class="info-company top-30" id="text">
+                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и  
+                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и 
+                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и 
+                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и 
+                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и 
+                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и 
+                                МЫ - команда професионалов в туризме с опытом рабоыты более 10 лет,и</div>
+                        
                             <div class="d-flex justify-content-center top-30">
-                                <button type="button" class="button-comand">НАША КОМАНДА</button>
+                                <button 
+                                type="button" 
+                                class="button-comand"
+                                >НАША КОМАНДА
+                            </button>
                             </div>
                             </div>
                     </div>
