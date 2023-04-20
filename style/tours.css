@@ -1,3 +1,8 @@
+.tours{
+    width: 100%;
+    height: 479px;
+}
+
 .tours-ways{
     position: relative;
 }
@@ -8,8 +13,8 @@
     border: 3px solid white;
     padding: 9px;
 
-    width: 350px;
-    height: 200px;
+    width: 257px;
+    height: 173px;
 }
 .tours-text{
     font-size: 40px;
@@ -17,8 +22,8 @@
 }
 .name-country{
     position: absolute;
-    top: 52%;
-    left: 8%;
+    top: 61%;
+    left: 27%;
 
     color: rgb(255, 255, 255);
     font-size: 2rem;

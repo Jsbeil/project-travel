@@ -1,0 +1,15 @@
+.team{
+    width: 100%;
+    height: 353px;
+}
+
+
+.staff-item{
+    width: 205px;
+    height: 249px;
+
+    border: 1px gray solid;
+}
+.staff{
+    padding: 0 140px;
+}

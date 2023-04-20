@@ -1,0 +1,20 @@
+.button-horizons{
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    color: rgb(35, 35, 35);
+}
+.button-horizons:focus{
+    border: none;
+    background-color: rgb(7, 150, 155);
+    color: white;
+}
+
+.button-comand{
+    background-color: rgb(7, 150, 155);
+    border: none;
+    color: white;
+    padding: 16px;
+}
+

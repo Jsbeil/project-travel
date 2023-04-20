@@ -1,0 +1,21 @@
+.send-message{
+    width: 100%;
+    height: 596px;
+}
+.send-message-input {
+    width: 654px;
+    height: 447px;
+
+    align-items: center;
+}
+.send-message-text{
+    width: 654px;
+    height: 50px;
+}
+.send-message-text-4{
+    width: 654px;
+}
+
+.message-button{
+    width: 661px;   
+}
