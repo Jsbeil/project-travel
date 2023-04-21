@@ -1,16 +1,14 @@
 .tours{
     width: 100%;
-    height: 507px;
 
     margin-top: 60px;
 }
 
-.tours-ways{
-    position: relative;
-}
-.tours-img{
-    display: block;
 
+.tours-img{
+    
+    position: relative;
+    z-index: 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border: 3px solid white;
     padding: 9px;
@@ -23,10 +21,9 @@
     text-align: center;
 }
 .name-country{
-    position: absolute;
-    top: 61%;
-    left: 27%;
-
+    position: relative;
+    z-index: 100;
+    top: -73px;
     color: rgb(255, 255, 255);
     font-size: 2rem;
     text-align: center;
