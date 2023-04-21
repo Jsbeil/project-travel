@@ -11,3 +11,18 @@
 
     margin-left: 92px;
 }
+
+.rating {
+    display: inline-block;
+    position: relative;
+  }
+.rating::before {
+    content: "\2605\2605\2605\2605\2605"; /* пятизвездочный рейтинг */
+    color: #e6b800; /* цвет звездочек */
+  }
+  .rating[data-rating="4"]::before {
+    content: "\2605\2605\2605\2605\2606"; /* четыре звездочки и одна без */
+  }
+  .rating[data-rating="5"]::before {
+    content: "\2605\2605\2605\2605\2606"; /* четыре звездочки и одна без */
+  }
