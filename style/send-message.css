@@ -4,8 +4,6 @@
 }
 .send-message-input {
     width: 654px;
-    height: 447px;
-
     align-items: center;
 }
 .send-message-text{
@@ -14,6 +12,7 @@
 }
 .send-message-text-4{
     width: 654px;
+    height: 181px;
 }
 
 .message-button{
