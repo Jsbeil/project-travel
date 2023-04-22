@@ -4,11 +4,11 @@ let index = 0;
 
 function changeImage() {
     const img = document.getElementById("image");
-    img.classList.add("fade-out"); // Добавляем класс с затуханием
+    img.classList.add("fade-out"); 
     setTimeout(() => {
       index = (index + 1) % images.length;
       img.src = images[index];
-      img.classList.remove("fade-out"); // Убираем класс с затуханием
+      img.classList.remove("fade-out"); 
     }, 1000);
   }
 
