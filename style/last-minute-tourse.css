@@ -12,6 +12,20 @@
     margin-left: 92px;
 }
 
+.scrollTop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: rgb(7, 150, 155);
+    color: white;
+    border-radius: 5px ;
+    border-radius: 1px solid rgb(7, 150, 155);
+    cursor: pointer;
+
+}
+
+
 .rating {
     display: inline-block;
     position: relative;

@@ -12,3 +12,17 @@ function chanheText(text){
 function zoomImg(img){
     img.classList.toggle("tours-active");
 }
+
+//Появление кнопки после прокрутки 500 пикселей 
+window.onscroll = function() {
+    let scrollBtn = document.getElementById('scrollBtn');
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  }
+//кнопка вверх 
+function scrollToTop(){
+    window.scrollTo(0, 0);
+}
