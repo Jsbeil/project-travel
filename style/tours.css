@@ -6,7 +6,6 @@
 
 
 .tours-img{
-    
     position: relative;
     z-index: 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -15,6 +14,8 @@
 
     width: 257px;
     height: 173px;
+
+    transition: all 0.5s ease-out;
 }
 .tours-text{
     font-size: 40px;
@@ -28,3 +29,15 @@
     font-size: 2rem;
     text-align: center;
 }
+
+.tours-active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 350px;
+    border: none;
+    padding: 0;
+    transform: translate(-50%, -50%) scale(2);
+    z-index: 999;
+  }
