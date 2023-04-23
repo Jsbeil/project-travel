@@ -40,3 +40,41 @@
   .rating[data-rating="5"]::before {
     content: "\2605\2605\2605\2605\2606"; /* четыре звездочки и одна без */
   }
+
+
+
+  
+  @media (min-width: 1245px) {
+      .last-minute-tourse{
+        width: 114%;
+      }
+}
+ 
+@media (min-width: 992px) and (max-width: 1199px) {
+    .last-minute-tourse{
+      width: 110%;
+    }
+}    
+@media (max-width: 991px ) and (min-width: 768px) {
+  .last-minute-tourse{
+    width: 110%;
+  }
+  .place-rest-item{
+    margin-left: 107px;
+  }
+  .img-last-minute{
+    margin-left: 23px;
+  }
+  .description-tourse{
+    font-size: 20px;
+  }
+  .light-black{
+    font-size: 30px;
+  }
+  .gray-color{
+    font-size: 20px;
+  }
+}
+ 
+@media (max-width:990px) and (min-width: 650px ){}
+ 

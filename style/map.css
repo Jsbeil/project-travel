@@ -4,3 +4,25 @@
 
     margin-top: 60px;
 }
+
+
+
+
+@media (min-width: 1245px) {
+    .map{
+        width: 114%;
+    }
+ }
+ 
+ @media (min-width: 992px) and (max-width: 1199px) {
+    .map{
+        width: 110%;
+    }
+}
+ @media (max-width: 991px ) and (min-width: 768px) {
+    .map{
+        width: 114%;
+    }
+ }
+ 
+ @media (max-width:990px) and (min-width: 650px ){}

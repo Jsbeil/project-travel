@@ -40,11 +40,14 @@
 }
 
 @media (min-width: 1245px) {
+    .top-header{
+        width: 114%;
+    }
     .top-header::before {
         right: 355px;  
     }
     .top-header::after{
-        right: 671px;
+        right: 801px;
     }
    
 }             
@@ -56,7 +59,7 @@
         right: 585px;
     }
     .top-header{
-        width: 103%;
+        width: 110%;
     }
 }    
 @media (max-width: 991px ) and (min-width: 768px) {
@@ -87,6 +90,7 @@
     }
     .search-header{
         width: 250px;
+        font-size: 20px;
     }
     .header-time{
         margin-right: 40px;
@@ -95,5 +99,4 @@
         margin-right: 40px;
     }
 }
-
 

@@ -7,3 +7,35 @@
 .footer-container{
     margin-top: 60px;
 }
+
+
+
+@media (min-width: 1245px) {
+        .footer{
+            width: 114%;
+        }
+ }
+ 
+ @media (min-width: 992px) and (max-width: 1199px) {
+    .footer{
+        width: 110%;
+    }
+}
+ @media (max-width: 991px ) and (min-width: 768px) {
+    .footer{
+        width: 114%;
+        
+    }
+    .white-color{
+        font-size: 15px;
+    }
+    .btno{
+        width: 170px;
+        font-size: 20px;
+    }
+    .scrollTop{
+        font-size: 20px;
+    }
+ }
+ 
+ @media (max-width:990px) and (min-width: 650px ){}
