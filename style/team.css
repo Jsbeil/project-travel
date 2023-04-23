@@ -15,14 +15,3 @@
     padding: 0 140px;
 }
 
-@media (max-width: 1307px){
-    .team{
-     width: 130%;
-    }
-    .staff-item{
-        height: 264px;
-    }
-    .staff-img{
-        margin-top: 10px;
-    }
-}

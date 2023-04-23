@@ -40,26 +40,3 @@
 }
 
 
-@media (max-width: 1448px ){
-    .top-header::after{
-    top: 0;
-    right: 710px;
-    }
-    .top-header::before{
-        top: 0;
-        right: 406px;
-    }
-}
-@media (max-width: 1307px){
-    .top-header::after{
-        display: none;
-        }
-        .top-header::before{
-          display: none;
-        }
-}
-@media (max-width: 1264px){
-    .top-header{
-        width: 130%;
-    }
-}

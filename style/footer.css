@@ -7,12 +7,3 @@
 .footer-container{
     margin-top: 60px;
 }
-
-@media (max-width: 1307px){
-    .footer{
-     width: 130%;
-    }
-    .white-color{
-        font-size: 20px;
-    }
-}

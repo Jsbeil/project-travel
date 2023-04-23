@@ -22,21 +22,3 @@
     width: 470px;
 }
 
-
-@media (max-width: 1320px){
-    .about-the-company{
-        width: 130%;
-        
-    }
-}
-@media (max-width: 1019px){
-    .about-the-company{
-        width: 130%;
-    }
-    .new-horizons{
-        margin-left: 150px;
-    }
-    .info-company {
-        font-size: 17px;
-    }
-}
