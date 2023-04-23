@@ -18,3 +18,45 @@
 .message-button{
     width: 661px;   
 }
+
+
+
+
+@media (min-width: 1245px) {
+    .send-message{
+        width: 114%;
+    }
+    .send-message-text-4{
+        border: 2px solid gray;
+    }
+    .send-message-text{
+        border: 2px solid gray;
+    }
+ }
+ 
+ @media (min-width: 992px) and (max-width: 1199px) {
+    .send-message{
+        width: 109%;
+    }
+    .send-message-text-4{
+        border: 2px solid gray;
+    }
+    .send-message-text{
+        border: 2px solid gray;
+    }
+}
+ @media (max-width: 991px ) and (min-width: 768px) {
+    .send-message{
+        width: 109%;
+    }
+    .send-message-text-4{
+        border: 2px solid gray;
+        font-size: 17px;
+    }
+    .send-message-text{
+        border: 2px solid gray;
+        font-size: 17px;
+    }
+ }
+ 
+ @media (max-width:990px) and (min-width: 650px ){}

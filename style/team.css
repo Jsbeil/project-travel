@@ -13,4 +13,32 @@
 }
 .staff{
     padding: 0 140px;
-}
+
+    
+}@media (min-width: 1245px) {
+    .team{
+     width: 114%;
+    }
+ }
+ 
+ @media (min-width: 992px) and (max-width: 1199px) {
+     .team{
+         width: 110%;
+     }
+ }    
+ @media (max-width: 991px ) and (min-width: 768px) {
+     .team{
+         width: 110%;
+     }
+     .staff{
+         padding: 0;
+         display: flex;
+         justify-content: center;
+     }
+     .staff-item{
+         height: 274px;
+         margin-left: 30px;
+     }
+ }
+ 
+ @media (max-width:990px) and (min-width: 650px ){}
