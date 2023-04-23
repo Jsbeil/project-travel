@@ -42,3 +42,37 @@
     transform: translate(-50%, -50%) scale(2);
     z-index: 999;
   }
+
+
+  @media (min-width: 1245px) {
+    .tours {
+        width: 114%;
+        margin-top: 60px;
+    }
+}
+ 
+@media (min-width: 992px) and (max-width: 1199px) {
+    .tours {
+        width: 114%;
+    }
+}    
+@media (max-width: 991px ) and (min-width: 768px) {
+    .tours {
+        width: 105%;
+        margin-top: 107px;
+        padding: 8px;
+    }
+    .toursss{
+        display: flex;
+        justify-content: center;
+    }
+    .tours-ways {
+        margin-left: 66px;
+    }
+    .container-ml{
+        padding: 0;
+    }
+}
+ 
+
+ 

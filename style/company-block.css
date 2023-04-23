@@ -22,3 +22,43 @@
     width: 470px;
 }
 
+@media (min-width: 1245px) {
+    .about-the-company{
+        width: 113%;
+    }
+}
+ 
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about-the-company{
+        width: 109%;
+    }
+    .new-horizons{
+        margin-left:150px;
+    }
+    .company-text{
+        margin-left: 70px;
+    }
+}    
+@media (max-width: 991px ) and (min-width: 768px) {
+    .about-the-company{
+        width: 109%;
+    }
+    .new-horizons{
+        margin-left:23px;
+    }
+}
+@media (max-width:990px) and (min-width: 650px ){
+    .about-the-company{
+        width: 109%;
+    }
+    .new-horizons{
+        margin-left:23px;
+    }
+    .horizons-text{
+        font-size: 25px;
+    }
+    .info-company {
+        width: 544px;
+        font-size: 20px;
+    }
+}
