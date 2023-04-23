@@ -42,3 +42,10 @@
     transform: translate(-50%, -50%) scale(2);
     z-index: 999;
   }
+
+
+  @media (max-width: 1307px){
+       .tours{
+        width: 130%;
+       }
+}

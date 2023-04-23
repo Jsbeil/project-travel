@@ -18,7 +18,6 @@
 }
 .video-header{
     width: 100%;
-
 }
 
 
@@ -30,3 +29,11 @@
     display: none !important;
   }
    
+  @media (max-width: 1264px){
+    .header-menu{
+        width: 130%;
+    }
+    .video-header{
+      width: 130%;
+    }
+}

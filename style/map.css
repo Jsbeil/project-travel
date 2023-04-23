@@ -4,3 +4,14 @@
 
     margin-top: 60px;
 }
+@media (max-width: 1307px){
+    .map{
+     width: 130%;
+    }
+}
+@media (max-width: 1376px){
+    .map{
+     width: 130%;
+     height: 500px;
+    }
+}
