@@ -38,3 +38,62 @@
 .fa-solid{
     align-items: center;
 }
+
+@media (min-width: 1245px) {
+    .top-header::before {
+        right: 355px;  
+    }
+    .top-header::after{
+        right: 671px;
+    }
+   
+}             
+@media (min-width: 992px) and (max-width: 1199px) {
+    .top-header::before {
+        right: 289px;  
+    }
+    .top-header::after{
+        right: 585px;
+    }
+    .top-header{
+        width: 103%;
+    }
+}    
+@media (max-width: 991px ) and (min-width: 768px) {
+    .top-header::before {
+        right: 289px;  
+    }
+    .top-header::after{
+        right: 585px;
+    }
+    .top-header{
+        width: 114%;
+    }
+}
+@media (max-width:990px) and (min-width: 650px ){
+    .top-header{
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+    }
+    .top-header::before {
+        display: none;  
+    }
+    .top-header::after{
+        display: none;
+    }
+    .logo-img{
+        margin-right: 40px;
+    }
+    .search-header{
+        width: 250px;
+    }
+    .header-time{
+        margin-right: 40px;
+    }
+    .number{
+        margin-right: 40px;
+    }
+}
+
+
