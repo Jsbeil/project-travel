@@ -14,10 +14,10 @@
 .staff{
     padding: 0 140px;
 
-    
+
 }@media (min-width: 1245px) {
     .team{
-     width: 114%;
+     width: 100%;
     }
  }
  

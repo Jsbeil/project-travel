@@ -41,7 +41,7 @@
 
 @media (min-width: 1245px) {
     .top-header{
-        width: 114%;
+        width: 100%;
     }
     .top-header::before {
         right: 355px;  

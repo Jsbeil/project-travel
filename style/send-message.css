@@ -24,7 +24,7 @@
 
 @media (min-width: 1245px) {
     .send-message{
-        width: 114%;
+        width: 100%;
     }
     .send-message-text-4{
         border: 2px solid gray;
